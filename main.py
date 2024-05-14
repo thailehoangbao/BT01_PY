@@ -1,15 +1,16 @@
-import customtkinter
+import customtkinter as ctk
 
+# Tạo một cửa sổ chính (main window)
+root = ctk.CTk()
 
-root = customtkinter.CTk()
+# Đặt kích thước của cửa sổ
+root.geometry("500x300")
 
+# Đặt tiêu đề của cửa sổ
+root.title("Thái Lê Hoàng Bảo")
 
-root.title("hello techX")
+# Không cho phép thay đổi kích thước của cửa sổ
+root.resizable(False, False)
 
-root.geometry("600x400")
-
-
-root.resizable(width=True, height=False)
-
-
+# Khởi động vòng lặp chính của ứng dụng
 root.mainloop()
