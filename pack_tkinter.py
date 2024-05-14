@@ -17,7 +17,7 @@ root.geometry("400x400")
 #2/place
 #3/grid
 #tham số 1: master => để quyết định thằng nào chứa nó
-frameTop = customtkinter.CTkFrame(master=root,fg_color="white")
+frameTop = customtkinter.CTkFrame(master=root,fg_color="red")
 frameTop.pack(side="top", fill="both", expand=True)
 
 

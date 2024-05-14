@@ -9,10 +9,10 @@ root = customtkinter.CTk()
 root.title("cyberlearn")
 #Chiều rộng , cao
 root.geometry("400x400")
-for column in range(0,2):
+for vitri in range(0,2):
     # ảnh hưởng theo cột
-    root.columnconfigure(column,weight=1)
-    root.rowconfigure(column,weight=1)
+    root.columnconfigure(vitri,weight=1)
+    root.rowconfigure(vitri,weight=1)
 
 
 frame = customtkinter.CTkFrame(master=root,fg_color="red")
