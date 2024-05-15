@@ -11,6 +11,7 @@ root.geometry("650x500")  # Kích thước cửa sổ lớn hơn để chứa da
 main_frame = ctk.CTkFrame(root)
 main_frame.pack(fill=ctk.BOTH, expand=1)
 
+
 # Canvas để chứa các sản phẩm
 canvas = Canvas(main_frame)
 canvas.pack(side=ctk.LEFT, fill=ctk.BOTH, expand=1)
@@ -22,6 +23,7 @@ scrollbar.pack(side=ctk.RIGHT, fill=ctk.Y)
 # Cấu hình Canvas
 canvas.configure(yscrollcommand=scrollbar.set)
 canvas.bind('<Configure>', lambda e: canvas.configure(scrollregion=canvas.bbox("all")))
+
 
 # Khung chứa các sản phẩm
 product_frame = ctk.CTkFrame(canvas)
